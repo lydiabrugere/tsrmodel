@@ -1,4 +1,4 @@
-Predicting tree species richness with artificial neural networks and random forests
+## Predicting tree species richness with artificial neural networks and random forests
 ==============================
 
 This repository contains all the source codes for data processes and model development for the following article:  
@@ -6,15 +6,20 @@ This repository contains all the source codes for data processes and model devel
 Brugere, L., Kwon, Y., Frazier, A. E., Kedron, P. 2021. Predicting tree species richness with artificial neural networks and random forests. Submitted to Environmental Modeling and Software.
 
 
-Project Organization
+### Project Organization
 ------------
 
-    ├── environmental_covariates_process		<- source codes for processing the 20 environmental covariates from the original sources to a central database in postgres
-    ├── fia_tsr_process	<- source codes for processing the FIA database for the continental U.S. from FIADB online to a central database in posstgrse and calculating TSR at a 20 km by 20 km grid system for the continental U.S.
-    └── models				<- GLM, random forest, ANN models training and testing as well as the hybrid models of them with ordinary kriging.
+    ├── environmental_covariates_process	<- source codes for processing the 20 environmental covariates from the original sources to a central database in postgres
+    ├── fia_tsr_process		<- source codes for processing the FIA database for the continental U.S. from FIADB online to a central database in posstgrse and calculating TSR at a 20 km by 20 km grid system for the continental U.S.
+    ├── data		<- auxilary data such as the grid system used in this study
+    └── models	<- GLM, random forest, ANN models training and testing as well as the hybrid models of them with ordinary kriging.
 --------
 
-Environmental Variables used in this study
+### Tree Species Occurrence Data Sources
+------------
+FIA database (version 1.8.0.00) for the continental United States from the [FIA DataMart](https://apps.fs.usda.gov/fia/datamart/). The 20 km by 20 km grid system (a total of 20,251 grids) over the entire continental United States can be found [here](https://github.com/lydiabrugere/tsrmodel/data/fishnet_NAD83.zip)
+
+### Environmental Covariates Data Sources
 ------------
 
 | Category                  | Abbreviation | Variable                                 | Data Source                             | Spatial Resolution | Previous Studies                                                                     |
