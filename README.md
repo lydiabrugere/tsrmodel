@@ -1,4 +1,4 @@
-Prediction of Tree Species Richness in Continental United States
+Predicting tree species richness with artificial neural networks and random forests
 ==============================
 
 This repository contains all the source codes for data processes and model development for the following article:  
