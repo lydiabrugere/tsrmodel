@@ -17,7 +17,7 @@ Brugere, L., Kwon, Y., Frazier, A. E., Kedron, P. 2021. Predicting tree species 
 
 ### Tree Species Occurrence Data Sources
 ------------
-FIA database (version 1.8.0.00) for the continental United States from the [FIA DataMart](https://apps.fs.usda.gov/fia/datamart/). The 20 km by 20 km grid system (a total of 20,251 grids) over the entire continental United States can be found [here](https://github.com/lydiabrugere/tsrmodel/data/fishnet_NAD83.zip)
+FIA database (version 1.8.0.00) for the continental United States from the [FIA DataMart](https://apps.fs.usda.gov/fia/datamart/). The 20 km by 20 km grid system (a total of 20,251 grids) over the entire continental United States can be found [here](https://github.com/lydiabrugere/tsrmodel/blob/master/data/fishnet_NAD83.zip).
 
 ### Environmental Covariates Data Sources
 ------------
