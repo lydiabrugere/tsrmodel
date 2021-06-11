@@ -10,12 +10,10 @@ Brugere, L., Kwon, Y., Frazier, A. E., Kedron, P. 2021. Predicting tree species 
 ------------
 This repo is organized according to the modeling workflow as illustrated below ![flowchart](https://github.com/lydiabrugere/tsrmodel/blob/master/Supplementary_Data/Model_Workflow_Chart.png)
 
-
-    ├── environmental_covariates_process	<- source codes for processing the 20 environmental covariates from the original sources to a central database in postgres
-    ├── fia_tsr_process		<- source codes for processing the FIA database for the continental U.S. from FIADB online to a central database in posstgrse and calculating TSR at a 20 km by 20 km grid system for the continental U.S.
-    ├── data		<- auxilary data such as the grid system used in this study
-    └── models	<- GLM, random forest, ANN models training and testing as well as the hybrid models of them with ordinary kriging.
---------
+> `Environmental_Covariates_Processing`: The python executables extract all the 20 environmental covariates used in this study from their orignal format and resolution to the 20 km by 20 km grid system; The Jupyter notebook `random_forest_permutation_importance ` computes permutation importances fitted to the trained random forest model. 
+> `TSR_Outcome_Variable_Processing`: The SQL files parse the FIA databases to calculate TSR in FIA plot level and then compile it to the 20 km by 20 km grid system; The Jupyter notebook `target_variable_eda.ipynb` calculate the summary statistics of the TSR and plot the frequency and density distribution.  
+> `Model_Development_Evaluation`: Each jupyter notebook contains model training, hyperparameter tuning, validation and testing as the file name implies. `Model_Results_Comparison` inside this folder are scripts for model results and residuals analysis.   
+> `Supplementary_Data`: contains the 20 km by 20 km grid system used in this study.  
 
 ### Tree Species Occurrence Data Sources
 ------------
