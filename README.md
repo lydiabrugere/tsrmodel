@@ -8,8 +8,8 @@ Brugere, L., Kwon, Y., Frazier, A. E., Kedron, P. 2021. Predicting tree species 
 
 ### Project Organization
 ------------
-This repo is organized according to the modeling workflow as illustrated below. 
-https://github.com/lydiabrugere/tsrmodel/blob/master/Supplementary_Data/Model_Workflow_Chart.png
+This repo is organized according to the modeling workflow as illustrated below ![flowchart](https://github.com/lydiabrugere/tsrmodel/blob/master/Supplementary_Data/Model_Workflow_Chart.png)
+
 
     ├── environmental_covariates_process	<- source codes for processing the 20 environmental covariates from the original sources to a central database in postgres
     ├── fia_tsr_process		<- source codes for processing the FIA database for the continental U.S. from FIADB online to a central database in posstgrse and calculating TSR at a 20 km by 20 km grid system for the continental U.S.
