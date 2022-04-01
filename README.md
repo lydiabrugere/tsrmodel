@@ -1,18 +1,19 @@
-## Predicting tree species richness with artificial neural networks and random forests
+## Improved prediction of tree species richness and interpretability of environmental drivers using a machine learning approach
 ==============================
 
 This repository contains all the source codes for data processes and model development for the following article:  
 
-Brugere, L., Kwon, Y., Frazier, A. E., Kedron, P. 2021. Predicting tree species richness with artificial neural networks and random forests. Submitted to Environmental Modeling and Software.
+Improved prediction of tree species richness and interpretability of environmental drivers using a machine learning approach. Submitted to Global Ecology and Biogeography.
 
 
 ### Project Organization
 ------------
 This repo is organized according to the modeling workflow as illustrated below ![flowchart](https://github.com/lydiabrugere/tsrmodel/blob/master/Supplementary_Data/Model_Workflow_Chart.png)
 
-> `Environmental_Covariates_Processing`: The python executables extract all the 20 environmental covariates used in this study from their orignal format and resolution to the 20 km by 20 km grid system; The Jupyter notebook `random_forest_permutation_importance ` computes permutation importances fitted to the trained random forest model. 
+> `Environmental_Covariates_Processing`: The python executables extract all the 20 environmental covariates used in this study from their orignal format and resolution to the 20 km by 20 km grid system;  
 > `TSR_Outcome_Variable_Processing`: The SQL files parse the FIA databases to calculate TSR in FIA plot level and then compile it to the 20 km by 20 km grid system; The Jupyter notebook `target_variable_eda.ipynb` calculate the summary statistics of the TSR and plot the frequency and density distribution.  
-> `Model_Development_Evaluation`: Each jupyter notebook contains model training, hyperparameter tuning, validation and testing as the file name implies. `Model_Results_Comparison` inside this folder are scripts for model results and residuals analysis.   
+> `Model_Development_Evaluation`: Each jupyter notebook contains model training, hyperparameter tuning, validation and testing as the file name implies. `Model_Results_Comparison` inside this folder are scripts for model results and residuals analysis.
+The Jupyter notebook `random_forest_permutation_importance ` performs SHAP analysis on the environmental drivers based on the trained random forest model.   
 > `Supplementary_Data`: contains the 20 km by 20 km grid system used in this study.  
 
 ### Tree Species Occurrence Data Sources
