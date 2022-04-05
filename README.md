@@ -14,7 +14,7 @@ This repo is organized according to the modeling workflow as illustrated below !
 > `TSR_Outcome_Variable_Processing`: The SQL files parse the FIA databases to calculate TSR in FIA plot level and then compile it to the 20 km by 20 km grid system; The Jupyter notebook `target_variable_eda.ipynb` calculate the summary statistics of the TSR and plot the frequency and density distribution.  
 > `Model_Development_Evaluation`: Each jupyter notebook contains model training, hyperparameter tuning, validation and testing as the file name implies. `Model_Results_Comparison` inside this folder are scripts for model results and residuals analysis.
 The Jupyter notebook `random_forest_permutation_importance ` performs SHAP analysis on the environmental drivers based on the trained random forest model.   
-> `Supplementary_Data`: contains the 20 km by 20 km grid system used in this study.  
+> `Supplementary_Data`: contains all the input & output variables aggregated at the 20 km by 20 km grid system used in this study for all the modeling and analysis.  
 
 ### Tree Species Occurrence Data Sources
 ------------
