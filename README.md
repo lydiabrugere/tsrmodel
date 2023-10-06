@@ -3,7 +3,7 @@
 
 This repository contains all the source codes for data processes and model development for the following article:  
 
-"Improved prediction of tree species richness and interpretability of environmental drivers using a machine learning approach", which is submitted to Forest Ecology and Management journal.
+"Improved prediction of tree species richness and interpretability of environmental drivers using a machine learning approach", which was published in Forest Ecology and Management journal.Link to the publication: https://doi.org/10.1016/j.foreco.2023.120972
 
 
 ### Project Organization
